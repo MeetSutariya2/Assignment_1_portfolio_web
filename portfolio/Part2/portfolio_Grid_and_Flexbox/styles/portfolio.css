@@ -1,0 +1,219 @@
+/* Header Styles */
+.header-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6f3fc;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #58c3f5;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* About Section Styles */
+#about {
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: match-parent;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+#projects {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Project Section Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between cards */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: stretch; /* Ensure all items are the same height */
+    padding: 20px;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #e6f3fc; 
+    border: 1px solid #ddd; /* Border for the cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Evenly distribute space */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+/* Responsive Design for Projects Section */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+
+#contact {
+    padding: 50px 20px; /* Top & bottom padding and side spacing for smaller screens */
+    text-align: center;
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the form */
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form horizontally */
+    background-color: #e6f3fc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Ensures all fields are the same width */
+    text-align: left; /* Align labels properly */
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%; /* Full width of the form container */
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #58c3f5;
+    box-shadow: 0 0 5px rgba(88, 195, 245, 0.5);
+    outline: none; /* Removes default outline */
+}
+
+textarea {
+    resize: vertical; /* Allows resizing only vertically */
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    background-color: #58c3f5;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2196F3;
+    transform: scale(1.05); /* Slightly increases size on hover */
+}
+
+button[type="submit"]:active {
+    transform: scale(1);
+}
+
+/* Adjust margins between form groups */
+.form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+
+footer {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
